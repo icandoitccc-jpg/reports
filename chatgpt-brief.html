@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MCL · ChatGPT AI Brief — 北美户外装备B2B项目完整交付物</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+    background:#0f0f0f;color:#e0e0e0;line-height:1.8;
+    max-width:960px;margin:0 auto;padding:40px 24px
+  }
+  h1{font-size:24px;color:#fff;border-bottom:2px solid #3a3a3a;padding-bottom:16px;margin-bottom:24px}
+  h2{font-size:20px;color:#f0c040;margin:36px 0 16px}
+  h3{font-size:17px;color:#d4d4d4;margin:24px 0 12px}
+  h4{font-size:15px;color:#aaa;margin:16px 0 8px}
+  p,li{font-size:15px;margin:8px 0}
+  ul,ol{padding-left:24px}
+  table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px}
+  th,td{border:1px solid #333;padding:8px 10px;text-align:left}
+  th{background:#1a1a1a;color:#ccc;font-weight:600}
+  td{background:#0f0f0f}
+  .highlight-row td{background:#1a2a1a}
+  .block{background:#141414;border:1px solid #2a2a2a;border-radius:8px;padding:24px;margin-bottom:20px}
+  .tag{display:inline-block;background:#2a2a2a;color:#f0c040;padding:2px 8px;border-radius:4px;font-size:12px;margin-right:6px}
+  .note{color:#888;font-size:13px;font-style:italic}
+  .callout{background:#202015;border-left:3px solid #f0c040;padding:12px 18px;margin:16px 0;border-radius:4px}
+  a{color:#f0c040}
+  hr{border:none;border-top:1px solid #2a2a2a;margin:32px 0}
+</style>
+</head>
+<body>
+
+<h1>MCL · ChatGPT AI Brief v1.0</h1>
+<p><strong>完整项目交付物 — 供 ChatGPT 审阅</strong></p>
+<p class="note">生成时间：2026-06-30 | 本项目由 WorkBuddy 执行，ChatGPT/Gemini 作为独立审阅层</p>
+
+<div class="callout">
+<strong>ChatGPT，你好。</strong>你以前帮我设计了"AI Data Input Protocol"来分析这份Excel。现在 WorkBuddy 已经完成了所有分析 + 建好了第一版英文B2B产品目录。Gemini 已审阅完毕并给出了意见。现在请你以独立审阅视角，阅读以下完整工作成果并给出你的判断。
+</div>
+
+<!-- ============================ -->
+<h2>第一部分｜原始数据概要</h2>
+<!-- ============================ -->
+
+<div class="block">
+<h3>1.1 数据来源</h3>
+<p>文件：<strong>美国市场产品推荐.xlsx</strong>（中国供应商 ShineTrip 山趣 的北美市场拿货价格表）</p>
+<ul>
+  <li><strong>SKU总数</strong>：345行（含颜色变体），去除颜色变体后约<strong>98个产品家族</strong></li>
+  <li><strong>4个Sheet</strong>：产品数据 + 3个辅助表</li>
+  <li><strong>品类覆盖</strong>：椅类 (10)、桌类 (2)、帐篷/天幕/收纳 (11)、睡袋 (3)、照明系统 (32)、餐厨系统 (28)、天幕配件 (14)</li>
+  <li><strong>价格结构</strong>：A级拿货价 → AB代理价 → B级代理价 → 零售价（人民币含税，未含运费关税）</li>
+  <li><strong>目标市场</strong>：北美户外装备零售 B2B（中小型零售商、专业买手店）</li>
+</ul>
+</div>
+
+<div class="block">
+<h3>1.2 完整产品清单（98 SKU，7大类）</h3>
+
+<h4>块A：椅类 Chairs（10个）</h4>
+<table>
+<tr><th>#</th><th>产品名</th><th>色系</th><th>A级拿货价</th><th>零售价</th><th>重量kg</th><th>收纳cm</th><th>材质/特点</th></tr>
+<tr><td>1</td><td>战梦休憩椅 (Camp Dream Rest Chair)</td><td>逐暮黑/战鹰沙</td><td>¥275</td><td>¥398</td><td>3.74</td><td>73×16×18.5</td><td>入门椅</td></tr>
+<tr><td>2</td><td>高低可变换马扎 (Adjustable Camp Stool)</td><td>风隐绿/战鹰沙</td><td>¥60</td><td>¥98</td><td>2.32</td><td>44×9.5×61.5</td><td>折叠凳</td></tr>
+<tr><td>3</td><td>高低可变换马扎-扶手款</td><td>风隐绿/战鹰沙</td><td>¥85</td><td>¥128</td><td>3.23</td><td>48×10×72</td><td>牛津布升级</td></tr>
+<tr><td>4</td><td>六档调节躺椅 (6-Pos Reclining Chair)</td><td>逐暮黑/战鹰沙</td><td>¥205</td><td>¥295</td><td>5.45</td><td>81×13.5×66</td><td>900D牛津布+6063铝管</td></tr>
+<tr><td>5</td><td>可调节折叠椅 (Adjustable Fold Chair)</td><td>逐暮黑/战鹰沙</td><td>¥220</td><td>¥358</td><td>5.5</td><td>19×27×96</td><td>橡木扶手</td></tr>
+<tr><td>6</td><td>舒适聚拢折叠椅 (Comfort Gathering Chair)</td><td>逐暮黑/战鹰沙</td><td>¥215</td><td>¥296</td><td>4.52</td><td>102×18×18</td><td>橡木扶手</td></tr>
+<tr class="highlight-row"><td>7</td><td>月亮椅 (Moon Chair) ⭐</td><td>战鹰沙/逐暮黑</td><td>¥55</td><td>¥99</td><td>2.6</td><td>14×14.5×68</td><td>600D牛津布+钢管 — 低价走量款</td></tr>
+<tr class="highlight-row"><td>8</td><td>克米特椅 (Kermit Chair) ⭐</td><td>逐暮黑/战鹰沙</td><td>¥157.5</td><td>¥268</td><td>3.45</td><td>64×15×10</td><td>经典Kermit款</td></tr>
+<tr><td>9</td><td>超轻战术马扎-L (Ultralight Tactical Stool L)</td><td>逐暮黑/风隐绿/战鹰沙</td><td>¥95</td><td>¥158</td><td>0.97</td><td>50×9.8×10</td><td>1000D牛津布+铝合金</td></tr>
+<tr><td>10</td><td>超轻战术马扎 (Ultralight Tactical Stool)</td><td>战鹰沙/逐暮黑/风隐绿</td><td>¥65</td><td>¥99</td><td>0.7</td><td>38×8.5×8</td><td>7075航空铝管14mm — 极致轻量</td></tr>
+</table>
+
+<h4>块B：桌类 Tables（2个）</h4>
+<table>
+<tr><th>#</th><th>产品名</th><th>色系</th><th>A级拿货价</th><th>零售价</th><th>重量kg</th><th>收纳cm</th><th>材质/特点</th></tr>
+<tr><td>11</td><td>芯阵战术四折桌 (Tactical 4-Fold Table)</td><td>逐暮黑</td><td>¥355</td><td>¥495</td><td>-</td><td>-</td><td>战术风高端桌</td></tr>
+<tr class="highlight-row"><td>12</td><td>战术折叠布面桌 (Tactical Fold Fabric Table) ⭐</td><td>逐暮黑/风隐绿/战鹰沙</td><td>¥90</td><td>¥148</td><td>1.22</td><td>41×12×12</td><td>轻量走量桌</td></tr>
+</table>
+
+<h4>块C：帐篷/天幕/收纳（11个）</h4>
+<table>
+<tr><th>#</th><th>产品名</th><th>色系</th><th>A级拿货价</th><th>零售价</th><th>重量kg</th><th>收纳cm</th><th>材质</th></tr>
+<tr><td>13</td><td>沐光一室两厅帐篷 (One-Room-Two-Hall Tent)</td><td>逐暮黑/战鹰沙</td><td>¥855</td><td>¥1298</td><td>-</td><td>-</td><td>旗舰帐篷</td></tr>
+<tr><td>14</td><td>归巢多功能收纳包 (Multi-Function Storage Bag)</td><td>逐暮黑</td><td>¥55</td><td>¥85</td><td>0.62</td><td>39×13×13</td><td>600D牛津布</td></tr>
+<tr><td>15</td><td>百纳战术开口包 (Tactical Open Pouch)</td><td>逐暮黑</td><td>¥75</td><td>¥118</td><td>1.44</td><td>32×39</td><td>牛津布</td></tr>
+<tr><td>16</td><td>战术魔组包-M (Tactical Module Bag M)</td><td>逐暮黑</td><td>¥105</td><td>¥185</td><td>1.24</td><td>48.5×21×22</td><td>牛津布</td></tr>
+<tr><td>17</td><td>战术魔组包-S (Tactical Module Bag S)</td><td>逐暮黑</td><td>¥65</td><td>¥99</td><td>0.58</td><td>38×14×16.5</td><td>牛津布</td></tr>
+<tr><td>18</td><td>战术魔组包-XS</td><td>逐暮黑</td><td>¥40</td><td>¥65</td><td>0.22</td><td>13.5×13.5×16.5</td><td>-</td></tr>
+<tr><td>19</td><td>战术魔组包-XXS</td><td>逐暮黑</td><td>¥35</td><td>¥56</td><td>0.34</td><td>28×11.5×11.5</td><td>-</td></tr>
+<tr><td>20</td><td>战术魔组包-S外包</td><td>逐暮黑</td><td>¥95</td><td>¥158</td><td>0.6</td><td>41×29×6</td><td>-</td></tr>
+<tr><td>21</td><td>战术充气枕 (Tactical Inflatable Pillow)</td><td>风隐绿/逐暮黑</td><td>¥45</td><td>¥79</td><td>0.25</td><td>11×11×16</td><td>-</td></tr>
+</table>
+
+<h4>块D：睡袋 Sleeping Bags（3个）</h4>
+<table>
+<tr><th>#</th><th>产品名</th><th>色系</th><th>A级拿货价</th><th>零售价</th><th>重量kg</th><th>收纳cm</th><th>温标</th><th>填充</th></tr>
+<tr><td>22</td><td>海豹睡袋 G160</td><td>逐暮黑/风隐绿</td><td>¥95</td><td>¥165</td><td>1.3</td><td>21×40</td><td>5-20℃</td><td>仿丝棉</td></tr>
+<tr><td>23</td><td>海豹睡袋 G230</td><td>逐暮黑/风隐绿</td><td>¥105</td><td>¥185</td><td>1.55</td><td>23×40</td><td>0-15℃</td><td>仿丝棉</td></tr>
+<tr><td>24</td><td>海豹睡袋 G300</td><td>逐暮黑/风隐绿</td><td>¥125</td><td>¥218</td><td>1.85</td><td>26×40</td><td>-10~5℃</td><td>仿丝棉</td></tr>
+</table>
+
+<h4>块E：照明系统 Lighting（32个）</h4>
+<table>
+<tr><th>#</th><th>产品名</th><th>色系</th><th>A级拿货价</th><th>零售价</th><th>重量kg</th><th>材质/特点</th></tr>
+<tr><td>25</td><td>光炬伸缩露营灯 (Torch Telescopic Lantern)</td><td>钛色</td><td>¥260</td><td>¥395</td><td>0.82</td><td>铝合金+ABS — 高端伸缩灯</td></tr>
+<tr><td>26</td><td>哨卫伸缩露营灯 (Sentinel Telescopic Lantern)</td><td>钛色</td><td>¥255</td><td>¥385</td><td>0.87</td><td>ABS+PC</td></tr>
+<tr><td>27</td><td>屿光战术灭蚊灯 (Tactical Mosquito Lantern)</td><td>逐暮黑/风隐绿/战鹰沙</td><td>¥85</td><td>¥138</td><td>0.66</td><td>ABS+碳钢</td></tr>
+<tr class="highlight-row"><td>28</td><td>卡片式露营灯 (Card Camping Light) ⭐</td><td>逐暮黑/战鹰沙/风隐绿/燃尽灰</td><td>¥45</td><td>¥78</td><td>0.18</td><td>ABS+PC — 低价走量</td></tr>
+<tr><td>29</td><td>角峰烛台灯阵3支点</td><td>逐暮黑</td><td>¥49</td><td>¥78</td><td>0.2</td><td>铝合金 — 配件型</td></tr>
+<tr><td>30</td><td>角峰烛台灯架</td><td>逐暮黑</td><td>¥25</td><td>¥39</td><td>0.14</td><td>铝合金</td></tr>
+<tr><td>31</td><td>影徊灯罩 (Shadow Shade)</td><td>逐暮黑</td><td>¥45</td><td>¥75</td><td>0.2</td><td>铝合金</td></tr>
+<tr><td>32</td><td>深翼机甲灯阵 (Mecha Wing Light Array)</td><td>逐暮黑</td><td>¥95</td><td>¥148</td><td>0.32</td><td>铝合金</td></tr>
+<tr><td>33</td><td>战术陋室灯阵 (Tactical Hermit Light Array)</td><td>逐暮黑</td><td>¥85</td><td>¥139</td><td>0.68</td><td>304不锈钢+榉木</td></tr>
+<tr><td>34</td><td>战域灯阵 (Battlefield Light Array)</td><td>逐暮黑</td><td>¥65</td><td>¥108</td><td>0.5</td><td>6063铝+榉木</td></tr>
+<tr><td>35</td><td>光影堡垒灯阵 (Fortress Light Array)</td><td>逐暮黑</td><td>¥115</td><td>¥186</td><td>1.48</td><td>304不锈钢</td></tr>
+<tr><td>36</td><td>观众席灯阵 (Audience Seat Light Array)</td><td>逐暮黑</td><td>¥95</td><td>¥158</td><td>1.2</td><td>不锈钢</td></tr>
+<tr><td>37</td><td>IGT单元板-机甲峰 (IGT Unit Board)</td><td>-</td><td>¥65</td><td>¥105</td><td>1.08</td><td>不锈钢</td></tr>
+<tr><td>38</td><td>星光盒灯阵-战术条码 (Star Box Light-Tac Barcode)</td><td>钛色</td><td>¥105</td><td>¥165</td><td>1.38</td><td>不锈钢</td></tr>
+<tr class="highlight-row"><td>39</td><td>星光盒灯阵-机甲峰 (Star Box Light-Mecha) ⭐</td><td>钛色</td><td>¥150</td><td>¥218</td><td>2.28</td><td>不锈钢</td></tr>
+<tr class="highlight-row"><td>40</td><td>星光盒灯阵-战术视窗 (Star Box Light-Tac Window) ⭐</td><td>钛色</td><td>¥150</td><td>¥218</td><td>2.34</td><td>不锈钢</td></tr>
+<tr><td>41</td><td>战术三角灯盒-时空之门</td><td>钛色</td><td>¥75</td><td>¥128</td><td>0.8</td><td>304不锈钢+亚克力</td></tr>
+<tr><td>42</td><td>战术三角灯盒-战术地带</td><td>钛色</td><td>¥75</td><td>¥128</td><td>0.8</td><td>同上</td></tr>
+<tr><td>43</td><td>天宫灯盒 (Heavenly Palace Light Box)</td><td>逐暮黑</td><td>¥120</td><td>¥188</td><td>1.2</td><td>不锈钢</td></tr>
+<tr><td>44</td><td>金字塔灯罩-灯罩款</td><td>逐暮黑</td><td>¥85</td><td>¥139</td><td>0.64</td><td>304不锈钢</td></tr>
+<tr><td>45</td><td>金字塔灯罩-驱蚊款</td><td>逐暮黑</td><td>¥80</td><td>¥128</td><td>0.71</td><td>304不锈钢</td></tr>
+<tr><td>46</td><td>拾光旋转19灯 (Rotating 19 Light)</td><td>多色</td><td>¥32</td><td>¥45</td><td>0.11</td><td>ABS+PC — 走量小灯</td></tr>
+<tr><td>47</td><td>拾光旋转19灯-蜂巢/渐变/能量块</td><td>多色</td><td>¥45</td><td>¥65</td><td>0.14</td><td>ABS+PC</td></tr>
+<tr><td>48</td><td>38灯星光桥-S/M/L</td><td>逐暮黑</td><td>¥60/75/85</td><td>¥96/128/145</td><td>0.34/0.44/0.6</td><td>铝合金+不锈钢</td></tr>
+<tr><td>49</td><td>风绳警示灯 (Guyline Warning Light)</td><td>逐暮黑</td><td>¥16.5</td><td>¥29</td><td>0.06</td><td>ABS+PC — 配件走量</td></tr>
+<tr><td>50</td><td>战术挂扣徽章灯 (Tactical Badge Clip Light)</td><td>逐暮黑</td><td>¥20</td><td>¥39</td><td>0.06</td><td>ABS+PC</td></tr>
+<tr><td>51</td><td>帐篷拍拍灯 (Tent Touch Light)</td><td>微烟灰</td><td>¥35</td><td>¥58</td><td>0.17</td><td>-</td></tr>
+<tr><td>52</td><td>坚果灯 (Nut Lamp)</td><td>多色</td><td>¥75</td><td>¥109</td><td>0.4</td><td>压铸铝+碳钢+ABS</td></tr>
+<tr><td>53</td><td>复古小吊灯 (Vintage Pendant Light)</td><td>多色</td><td>¥27.5</td><td>¥39.9</td><td>0.21</td><td>Iron+ABS+PC</td></tr>
+<tr><td>54</td><td>19灯启航标 (19-LED Beacon)</td><td>逐暮黑</td><td>¥10.5</td><td>¥24</td><td>0.06</td><td>不锈钢+铝合金 — 微配件</td></tr>
+<tr><td>55</td><td>19灯转轮 (19-LED Rotor)</td><td>钛色</td><td>¥17</td><td>¥28</td><td>0.09</td><td>不锈钢+铝合金</td></tr>
+<tr><td>56</td><td>19灯挂绳长款/短款</td><td>钛色</td><td>¥12/¥10</td><td>¥24/¥19</td><td>0.02</td><td>铝合金+涤纶</td></tr>
+</table>
+
+<h4>块F：餐厨系统 Kitchen & Cooking（28个）</h4>
+<table>
+<tr><th>#</th><th>产品名</th><th>色系</th><th>A级拿货价</th><th>零售价</th><th>重量kg</th><th>材质/特点</th></tr>
+<tr><td>57</td><td>霰野餐具收纳筒 (Tableware Storage Tube)</td><td>逐暮黑</td><td>¥20</td><td>¥32</td><td>0.057</td><td>铝合金</td></tr>
+<tr><td>58</td><td>拓野餐具套装 (Wilderness Cutlery Set)</td><td>钛色</td><td>¥45</td><td>¥68</td><td>0.1</td><td>TA1钛 — 钛餐具轻量</td></tr>
+<tr><td>59</td><td>爆炎战术喷枪 (Blast Torch)</td><td>逐暮黑</td><td>¥78</td><td>¥138</td><td>0.72</td><td>ABS+不锈钢+铜</td></tr>
+<tr><td>60</td><td>炙炎战术喷枪 (Inferno Torch)</td><td>逐暮黑</td><td>¥125</td><td>¥198</td><td>1.66</td><td>ABS+不锈钢+铜 — 大喷枪</td></tr>
+<tr><td>61</td><td>烈焰战术喷枪 (Flame Torch)</td><td>逐暮黑</td><td>¥99</td><td>¥158</td><td>0.68</td><td>铝合金+不锈钢+铜</td></tr>
+<tr class="highlight-row"><td>62</td><td>焰舞观火炉 (Flame Dance Fire Pit) ⭐</td><td>逐暮黑</td><td>¥385</td><td>¥698</td><td>2.9</td><td>不锈钢 — 高端观火炉</td></tr>
+<tr><td>63</td><td>暗星DHQ (Dark Star DHQ)</td><td>多色</td><td>¥20</td><td>¥38</td><td>0.12</td><td>ABS+锌合金</td></tr>
+<tr><td>64</td><td>炽星点火器 (Blazing Star Igniter)</td><td>多色</td><td>¥19</td><td>¥29</td><td>0.12</td><td>ABS+锌合金</td></tr>
+<tr class="highlight-row"><td>65</td><td>冰桶 (Ice Bucket) ⭐</td><td>逐暮黑/燃尽灰</td><td>¥135</td><td>¥198</td><td>1.39</td><td>304不锈钢</td></tr>
+<tr><td>66</td><td>战术冰桶包 (Tactical Ice Bucket Bag)</td><td>逐暮黑</td><td>¥35</td><td>¥59</td><td>0.16</td><td>1000D牛津布</td></tr>
+<tr><td>67</td><td>战术水桶包5L/12.9L</td><td>逐暮黑</td><td>¥45/¥65</td><td>¥68/¥108</td><td>0.26/0.34</td><td>牛津布</td></tr>
+<tr class="highlight-row"><td>68</td><td>战术露营杯 (Tactical Camp Cup) ⭐</td><td>逐暮黑/燃尽灰/微烟灰</td><td>¥29</td><td>¥56</td><td>0.28</td><td>全304不锈钢</td></tr>
+<tr><td>69</td><td>战术长气罐套 (Long Gas Canister Sleeve)</td><td>逐暮黑</td><td>¥25</td><td>¥49</td><td>0.07</td><td>1000D尼龙+UTX扣件</td></tr>
+<tr><td>70</td><td>战术扁气罐套大号/小号</td><td>逐暮黑</td><td>¥32/¥28</td><td>¥68/¥56</td><td>0.09/0.06</td><td>UTX扣件</td></tr>
+<tr><td>71</td><td>焚火钳套装 (Fire Tongs Set)</td><td>-</td><td>¥45</td><td>¥78</td><td>0.43</td><td>碳钢+皮革套</td></tr>
+<tr><td>72</td><td>焚火钳套装55cm</td><td>-</td><td>¥55</td><td>¥89</td><td>0.57</td><td>碳钢+皮革套</td></tr>
+<tr class="highlight-row"><td>73</td><td>战术野餐垫-等高线S/M/L (Tactical Picnic Mat) ⭐</td><td>逐暮黑/风隐绿/战鹰沙</td><td>¥65/85/105</td><td>¥98/118/165</td><td>1.11~2.34</td><td>雪花绒</td></tr>
+<tr><td>74</td><td>硅胶防火布-六边形大/小号</td><td>逐暮黑</td><td>¥75/¥50</td><td>¥128/¥85</td><td>0.66/0.3</td><td>硅胶+玻璃纤维</td></tr>
+<tr><td>75</td><td>硅胶防火布-矩形</td><td>逐暮黑</td><td>¥30</td><td>¥48</td><td>0.2</td><td>硅胶+玻璃纤维</td></tr>
+<tr><td>76</td><td>二次燃烧炉 (Secondary Combustion Stove)</td><td>钛色</td><td>¥195</td><td>¥298</td><td>4.6</td><td>430不锈钢</td></tr>
+<tr><td>77</td><td>炽焰焚火台-主体 (Blaze Fire Pit Body)</td><td>逐暮黑</td><td>¥195</td><td>¥318</td><td>8.12</td><td>碳钢</td></tr>
+<tr><td>78</td><td>炽焰焚火台-烤网</td><td>-</td><td>¥35/¥57.5</td><td>¥59/¥89</td><td>0.88/0.65</td><td>碳钢/不锈钢</td></tr>
+<tr><td>79</td><td>调味瓶收纳包/套装 (Seasoning Kit)</td><td>卡其/黑</td><td>¥24/¥45</td><td>¥38/¥68</td><td>0.17/0.89</td><td>牛津布</td></tr>
+<tr><td>80</td><td>碧泉饮水袋8L (Spring Water Bag)</td><td>墨绿/卡其</td><td>¥9.5</td><td>¥28</td><td>0.12</td><td>PET/NY/PE三层</td></tr>
+<tr><td>81</td><td>畅炊露营挡风板/套装 (Windshield Set)</td><td>卡其/黑</td><td>¥52/¥75</td><td>¥85/¥108</td><td>1.98/2.45</td><td>碳钢</td></tr>
+<tr><td>82</td><td>防火布套装S/M/L (Fire Cloth Set)</td><td>-</td><td>¥15.5/¥26/¥30</td><td>¥29/¥40/¥52</td><td>0.32/0.69/0.99</td><td>玻璃纤维</td></tr>
+</table>
+
+<h4>块G：天幕配件 Canopy Accessories（14个）</h4>
+<table>
+<tr><th>#</th><th>产品名</th><th>色系</th><th>A级拿货价</th><th>零售价</th><th>重量kg</th><th>材质/特点</th></tr>
+<tr><td>83</td><td>风语战术风绳拉带 (Tactical Guyline Tensioner)</td><td>逐暮黑</td><td>¥108</td><td>¥168</td><td>0.62</td><td>仿尼龙</td></tr>
+<tr><td>84</td><td>战术天幕杆挂套 (Tactical Pole Holder)</td><td>逐暮黑/战鹰沙</td><td>¥30</td><td>¥58</td><td>0.08</td><td>1000D尼龙</td></tr>
+<tr><td>85</td><td>擎锁伸缩天幕杆2.8米×2</td><td>逐暮黑/风隐绿</td><td>¥135</td><td>¥198</td><td>2.59~2.61</td><td>铝合金</td></tr>
+<tr><td>86</td><td>全收缩天幕杆2.3米</td><td>黑色</td><td>¥85</td><td>¥135</td><td>1.4</td><td>6061铝管+尼龙</td></tr>
+<tr><td>87</td><td>全收缩天幕杆3米</td><td>黑色/钛色</td><td>¥108</td><td>¥169</td><td>1.65</td><td>6061铝管+尼龙</td></tr>
+<tr><td>88</td><td>31MM伸缩天幕杆套装</td><td>黑色/钛色</td><td>¥69</td><td>¥98</td><td>1.02~1.06</td><td>铝合金</td></tr>
+<tr><td>89</td><td>防雷帽套装 (Lightning Cap Set)</td><td>多色</td><td>¥7.5</td><td>¥19</td><td>0.1</td><td>PR防静电 — 最低价配件</td></tr>
+<tr><td>90</td><td>帐篷支撑三脚架 (Tripod Support)</td><td>逐暮黑</td><td>¥35</td><td>¥58</td><td>0.19</td><td>铝合金</td></tr>
+<tr><td>91</td><td>天幕杆顶针套装大号</td><td>红/黑</td><td>¥22.5</td><td>¥37</td><td>0.11</td><td>铝合金</td></tr>
+<tr><td>92</td><td>帐篷杆顶针大号</td><td>黑色</td><td>¥17.5</td><td>¥32</td><td>0.061</td><td>铝合金</td></tr>
+<tr><td>93</td><td>8.5mm×333cm帐篷杆2根</td><td>-</td><td>¥45</td><td>¥76</td><td>0.43</td><td>7001T6航空铝</td></tr>
+<tr><td>94</td><td>8.5mm×3.6m帐篷杆2根</td><td>-</td><td>¥52</td><td>¥79</td><td>0.51</td><td>7001T6航空铝</td></tr>
+<tr><td>95</td><td>8.5mm×405cm帐篷杆2根</td><td>-</td><td>¥60</td><td>¥86</td><td>0.56</td><td>7001T6航空铝</td></tr>
+<tr><td>96</td><td>8.5mm×442cm帐篷杆2根</td><td>-</td><td>¥69</td><td>¥98</td><td>0.61</td><td>7001T6航空铝</td></tr>
+</table>
+</div>
+
+<hr>
+
+<!-- ============================ -->
+<h2>第二部分｜ShineTrip B2B 产品目录 v1.1</h2>
+<!-- ============================ -->
+
+<div class="block">
+<h3>2.1 选品逻辑</h3>
+<p>从98个产品家族中精选<strong>28个SKU</strong>，按以下原则组织：</p>
+<ul>
+  <li><strong>三档价位搭配</strong>：走量款（低价吸睛）+ 利润款（中价主力）+ 形象款（高价建立品类权威）</li>
+  <li><strong>品类完整性</strong>：覆盖椅、桌、照明、餐厨、收纳、睡袋六大户外核心场景</li>
+  <li><strong>差异化卖点</strong>：突出战术风设计美学、模块化系统、硬核材质（钛/不锈钢/7075航空铝）</li>
+  <li><strong>中小企业友好</strong>：多数产品MOQ低，每箱多套，降低经销商库存风险</li>
+</ul>
+</div>
+
+<div class="block">
+<h3>2.2 目录结构（5大板块 + 附录）</h3>
+
+<h4>Section 00: Who We Supply — 价值主张</h4>
+<ul>
+  <li>Middle-Market Camping Retailers（中型户外零售商）</li>
+  <li>Specialty Buyer Shops（专业买手店）</li>
+  <li>Cost + Uniqueness: Take-Home Under $50-150, Margin 45-60%, Sub-$10 Ad-Ons</li>
+  <li>Differentiation: Tactical Design Identity, Modular Ecosystem, Material Escalation</li>
+</ul>
+
+<h4>Section 01: Entry Products（入门引流款，4 SKU）</h4>
+<table>
+<tr><th>SKU</th><th>产品名</th><th>英文名</th><th>A级拿货价</th><th>USP / 一句话卖点</th></tr>
+<tr class="highlight-row"><td>Ⅰ-01</td><td>月亮椅</td><td><strong>Moon Chair</strong></td><td>¥55</td><td>Sub-$15 take-home folding chair — volume anchor for boutique camping retailers</td></tr>
+<tr class="highlight-row"><td>Ⅰ-02</td><td>卡片式露营灯</td><td><strong>Card Camping Light</strong></td><td>¥45</td><td>Pocket-sized 100-lumen card light — impulse buy at register</td></tr>
+<tr class="highlight-row"><td>Ⅰ-03</td><td>战术露营杯</td><td><strong>Tactical Camp Cup</strong></td><td>¥29</td><td>Full 304 stainless steel — sub-$8, outlasts enamelware</td></tr>
+<tr class="highlight-row"><td>Ⅰ-04</td><td>归巢多功能收纳包(S)</td><td><strong>Multi-Function Storage Bag (S)</strong></td><td>¥55</td><td>600D Oxford modular organizer — under-$10, 20 units/case</td></tr>
+</table>
+
+<h4>Section 02: Core Camping System（核心露营系统，6 SKU）</h4>
+<table>
+<tr><th>SKU</th><th>产品名</th><th>英文名</th><th>A级拿货价</th><th>USP</th></tr>
+<tr class="highlight-row"><td>Ⅱ-01</td><td>克米特椅</td><td><strong>Kermit Folding Chair</strong></td><td>¥157.5</td><td>The iconic Kermit silhouette — oak armrests, 900D oxford, packed 64×15×10cm</td></tr>
+<tr class="highlight-row"><td>Ⅱ-02</td><td>六档调节躺椅</td><td><strong>6-Position Reclining Chair</strong></td><td>¥205</td><td>6-angle recline, 900D oxford + 6063 aluminum — multi-scene comfort</td></tr>
+<tr class="highlight-row"><td>Ⅱ-03</td><td>可调节折叠椅</td><td><strong>Adjustable Folding Chair</strong></td><td>¥220</td><td>Adjustable backrest, oak armrests — premium B2B comfort chair</td></tr>
+<tr class="highlight-row"><td>Ⅱ-04</td><td>舒适聚拢折叠椅</td><td><strong>Comfort Gathering Chair</strong></td><td>¥215</td><td>Gathering-style folding, oak armrests — social camping anchor</td></tr>
+<tr class="highlight-row"><td>Ⅱ-05</td><td>战术折叠布面桌</td><td><strong>Tactical Folding Fabric Table</strong></td><td>¥90</td><td>1.22kg ultralight tactical table — 10/case, perfect for camp kitchen</td></tr>
+<tr class="highlight-row"><td>Ⅱ-06</td><td>战术野餐垫 (S/M/L)</td><td><strong>Tactical Picnic Mat (S/M/L)</strong></td><td>¥65/85/105</td><td>Contour-line tactical picnic mat in 3 sizes — snow velvet, moisture-resistant</td></tr>
+</table>
+
+<h4>Section 03: Performance Line（性能产品线，6 SKU）</h4>
+<table>
+<tr><th>SKU</th><th>产品名</th><th>英文名</th><th>A级拿货价</th><th>USP</th></tr>
+<tr class="highlight-row"><td>Ⅲ-01</td><td>超轻战术马扎</td><td><strong>Ultralight Tactical Stool</strong></td><td>¥65</td><td>0.7kg, 7075 aircraft aluminum 14mm tubes — ultralight backpacking essential</td></tr>
+<tr class="highlight-row"><td>Ⅲ-02</td><td>超轻战术马扎 L</td><td><strong>Ultralight Tactical Stool L</strong></td><td>¥95</td><td>0.97kg larger variant, 1000D oxford + aluminum — 20/case</td></tr>
+<tr class="highlight-row"><td>Ⅲ-03</td><td>芯阵战术四折桌</td><td><strong>Tactical 4-Fold Table</strong></td><td>¥355</td><td>Premium tactical 4-fold — the centerpiece of any serious camp kitchen</td></tr>
+<tr class="highlight-row"><td>Ⅲ-04</td><td>光炬伸缩露营灯</td><td><strong>Torch Telescopic Lantern</strong></td><td>¥260</td><td>Telescopic aluminum lantern — flagship lighting, premium tactical aesthetic</td></tr>
+<tr class="highlight-row"><td>Ⅲ-05</td><td>哨卫伸缩露营灯</td><td><strong>Sentinel Telescopic Lantern</strong></td><td>¥255</td><td>Slightly more compact telescopic — dual-light mode, ABS+PC body</td></tr>
+<tr class="highlight-row"><td>Ⅲ-06</td><td>战梦休憩椅</td><td><strong>Camp Dream Rest Chair</strong></td><td>¥275</td><td>The "Dream Rest" — ergonomic lounge chair, 3.74kg packed slim</td></tr>
+</table>
+
+<h4>Section 04: Signature Tactical Series（战术签名系列，6 SKU）</h4>
+<table>
+<tr><th>SKU</th><th>产品名</th><th>英文名</th><th>A级拿货价</th><th>USP</th></tr>
+<tr class="highlight-row"><td>Ⅳ-01</td><td>星光盒灯阵-机甲峰</td><td><strong>Star Box Light — Mecha</strong></td><td>¥150</td><td>Stainless steel mecha-peak light array — the "statement piece" for camp ambiance</td></tr>
+<tr class="highlight-row"><td>Ⅳ-02</td><td>星光盒灯阵-战术视窗</td><td><strong>Star Box Light — Tactical Window</strong></td><td>¥150</td><td>2.34kg tactical window variant — heavy stainless, military-grade aesthetic</td></tr>
+<tr class="highlight-row"><td>Ⅳ-03</td><td>屿光战术灭蚊灯</td><td><strong>Tactical Mosquito Lantern</strong></td><td>¥85</td><td>ABS+carbon steel — solves the #1 campsite complaint: bugs + light in one</td></tr>
+<tr class="highlight-row"><td>Ⅳ-04</td><td>焰舞观火炉</td><td><strong>Flame Dance Fire Pit</strong></td><td>¥385</td><td>Full stainless steel fire pit, 2.9kg — the ultimate camp centerpiece</td></tr>
+<tr class="highlight-row"><td>Ⅳ-05</td><td>战术喷枪系列 (S/M/L)</td><td><strong>Tactical Torch Series (S/M/L)</strong></td><td>¥78/99/125</td><td>Three-tier tactical torches — Blast/Flame/Inferno, all metal+ABS</td></tr>
+<tr class="highlight-row"><td>Ⅳ-06</td><td>钛合金餐具套装</td><td><strong>Titanium Cutlery Set</strong></td><td>¥45</td><td>TA1 pure titanium — ultralight, rust-proof, no metallic taste</td></tr>
+</table>
+
+<h4>Section 05: System Expansion（系统扩展，7 SKU）</h4>
+<table>
+<tr><th>SKU</th><th>产品名</th><th>英文名</th><th>A级拿货价</th><th>USP</th></tr>
+<tr class="highlight-row"><td>Ⅴ-01</td><td>海豹睡袋 G160</td><td><strong>Seal Sleeping Bag G160</strong></td><td>¥95</td><td>5-20℃ 3-season, 1.3kg — 16/case, best-selling temp range</td></tr>
+<tr class="highlight-row"><td>Ⅴ-02</td><td>海豹睡袋 G230</td><td><strong>Seal Sleeping Bag G230</strong></td><td>¥105</td><td>0-15℃ mid-season, 1.55kg — the 3-season workhorse</td></tr>
+<tr class="highlight-row"><td>Ⅴ-03</td><td>海豹睡袋 G300</td><td><strong>Seal Sleeping Bag G300</strong></td><td>¥125</td><td>-10~5℃ cold-weather, 1.85kg — shoulder season and cold-climate anchor</td></tr>
+<tr class="highlight-row"><td>Ⅴ-04</td><td>战术魔组包 S</td><td><strong>Tactical Module Bag (S)</strong></td><td>¥65</td><td>38×14×16.5cm oxford module — 15/case, organize any camp kitchen</td></tr>
+<tr class="highlight-row"><td>Ⅴ-05</td><td>战术魔组包 M</td><td><strong>Tactical Module Bag (M)</strong></td><td>¥105</td><td>48.5×21×22cm — the mid-size module that anchors the storage system</td></tr>
+<tr class="highlight-row"><td>Ⅴ-06</td><td>战术冰桶包</td><td><strong>Tactical Ice Bucket Bag</strong></td><td>¥35</td><td>1000D oxford ice bucket bag — sub-$10 upsell, pairs with every camp purchase</td></tr>
+<tr class="highlight-row"><td>Ⅴ-07</td><td>战术水桶包 (5L/12.9L)</td><td><strong>Tactical Water Bucket Bag (5L/12.9L)</strong></td><td>¥45/65</td><td>Foldable water bucket — 70 or 50/case, practical companion to camp kitchen</td></tr>
+</table>
+
+<h4>附录：价位带分布</h4>
+<table>
+<tr><th>价位带</th><th>A级拿货价 (¥)</th><th>代表产品</th><th>功能定位</th></tr>
+<tr><td>低价走量</td><td>¥29 - 65</td><td>战术露营杯、月亮椅、卡片灯、冰桶包</td><td>Entry / Impulse Buy</td></tr>
+<tr><td>中低主力</td><td>¥78 - 135</td><td>克米特椅、折叠布面桌、战术喷枪、灭蚊灯</td><td>Volume Driver</td></tr>
+<tr><td>中端利润</td><td>¥150 - 220</td><td>六档躺椅、可调折叠椅、聚拢椅、星光盒灯阵</td><td>Margin Builder</td></tr>
+<tr><td>中高形象</td><td>¥255 - 355</td><td>伸缩露营灯、战术四折桌、战梦休憩椅</td><td>Brand Authority</td></tr>
+<tr><td>高端旗舰</td><td>¥385</td><td>焰舞观火炉</td><td>Halo Product</td></tr>
+</table>
+
+</div>
+
+<hr>
+
+<!-- ============================ -->
+<h2>第三部分｜执行决策与上下文</h2>
+<!-- ============================ -->
+
+<div class="block">
+<h3>3.1 项目框架</h3>
+<ul>
+  <li><strong>项目阶段</strong>：客户验证（Client Validation）— 不再做市场研究，重点是触达真实买家</li>
+  <li><strong>目标客户</strong>：约40个小B客户（北美中小型户外装备零售商、专业买手店）</li>
+  <li><strong>排除渠道</strong>：REI（大型连锁暂不触碰，验证阶段聚焦中小买家）</li>
+  <li><strong>系统设计</strong>：MCL SOP v1.0（AI协作执行标准操作流程），ChatGPT/Gemini 为独立审阅层</li>
+</ul>
+
+<h3>3.2 六大市场方向</h3>
+<ul>
+  <li><strong>精致露营</strong>：极高体量，防守对标策略，主攻大型连锁（后期）</li>
+  <li><strong>大众露营</strong>：高体量，抄作业学习策略，主攻专业买手店（当前主力）</li>
+  <li><strong>大型连锁</strong>：中体量，深度渠道拓展，主攻区域代理商</li>
+  <li><strong>车宿越野</strong>：低体量，长期追踪储备，主攻DTC电商</li>
+  <li><strong>潜力/其他</strong>：混合渠道探索</li>
+</ul>
+
+<h3>3.3 品牌调性维度</h3>
+<ul>
+  <li>精致生活/氛围美学</li>
+  <li>车宿越野/功能改造</li>
+  <li>极致轻量/硬核性能</li>
+  <li>高性价比/大众通路</li>
+  <li>复古/传统文化向</li>
+</ul>
+
+<h3>3.4 关键决策记录</h3>
+<ol>
+  <li><strong>D-001</strong>：先 Camping 店（非 REI），聚焦中小零售商验证产品</li>
+  <li><strong>D-002</strong>：使用 GitHub Pages 托管所有对外交付物（CloudStudio 被 ChatGPT/Gemini 屏蔽）</li>
+  <li><strong>D-003</strong>：建立双层系统——认知层（AI协作）× 执行层（市场开发）</li>
+  <li><strong>D-004</strong>：WorkBuddy 为唯一 Project State 写入方，ChatGPT/Gemini 只读不写</li>
+  <li><strong>D-005</strong>：MCL v1.0 SOP 上线，增加 Reality Check 层</li>
+</ol>
+</div>
+
+<hr>
+
+<!-- ============================ -->
+<h2>第四部分｜需要 ChatGPT 审阅的重点</h2>
+<!-- ============================ -->
+
+<div class="callout">
+<h3>请 ChatGPT 重点审阅以下方面：</h3>
+
+<ol>
+  <li><strong>选品质量审查</strong>：这28个SKU的选择是否合理？有没有明显缺失的品类？有没有应该去掉的鸡肋产品？</li>
+  
+  <li><strong>价位带搭配</strong>：走量款→利润款→形象款的比例是否健康？对于北美中小零售商来说，这个价格结构能打动人吗？</li>
+  
+  <li><strong>叙事逻辑</strong>：目录的5个Section排序（Entry → Core → Performance → Signature → Expansion）是否符合北美B2B买手的阅读习惯？</li>
+  
+  <li><strong>竞争盲区</strong>：在北美市场现有的椅子/桌子/灯具/餐厨品类里，这28个产品有没有什么明显的竞争短板？哪些品类可能已经过度饱和？</li>
+  
+  <li><strong>第一轮触达策略</strong>：针对40个小B客户，你会建议怎么用这份目录？（开发信附完整目录 vs. 先发3-5款精选？邮件 vs. IG DM vs. 电话？）</li>
+  
+  <li><strong>品类优先级</strong>：从美国零售商视角，椅类/照明/餐厨/睡袋/收纳，哪个品类最可能成为第一个实际成交的品类？为什么？</li>
+  
+  <li><strong>任何你发现的致命问题</strong>：说实话，不要客气。</li>
+</ol>
+</div>
+
+<hr>
+
+<!-- ============================ -->
+<h2>附录｜视觉资源链接</h2>
+<!-- ============================ -->
+
+<div class="block">
+<h3>在线可访问资源</h3>
+<ul>
+  <li><strong>ShineTrip B2B Catalog v1.1 PDF</strong>（含产品实拍图，9页，4.4MB）：<a href="https://icandoitccc-jpg.github.io/github-xiezuo/ShineTrip-Catalog-v1.1-B2B.pdf" target="_blank">点击查看</a></li>
+  <li><strong>ShineTrip B2B Catalog v1.1 HTML</strong>（含产品实拍图，网页版）：<a href="https://icandoitccc-jpg.github.io/github-xiezuo/shinetrip-catalog-v1.1.html" target="_blank">点击查看</a></li>
+  <li><strong>项目状态页</strong>（Project State）：<a href="https://icandoitccc-jpg.github.io/github-xiezuo/project-state.html" target="_blank">点击查看</a></li>
+  <li><strong>本页面（AI Readable Brief）</strong>：<a href="https://icandoitccc-jpg.github.io/github-xiezuo/chatgpt-brief.html" target="_blank">就是当前页面</a></li>
+</ul>
+</div>
+
+<div class="block">
+<h3>技术备注</h3>
+<ul>
+  <li>Excel中嵌入了<strong>232张产品实拍图</strong>，已通过解析`xl/drawings/*.xml`和关系文件完整提取</li>
+  <li>Catalog v1.1 的每张产品图片均来自Excel原始附件（仅钛合金餐具套装使用了网络补充图）</li>
+  <li>所有价格为中国人民币含税拿货价，建议零售价换算系数为 ×3 至 ×4（美元）</li>
+  <li>如需更多原始数据或图片，请说明</li>
+</ul>
+</div>
+
+</body>
+</html>
