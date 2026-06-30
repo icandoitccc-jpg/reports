@@ -1,0 +1,27 @@
+PROJECT STATE SNAPSHOT — 2026-06-30
+
+1. 系统层状态（AI协作）
+- 正在优化：降低 CTC（Context Transfer Cost）
+- 当前版本：MCL Boot Loader v3
+- 验证完成：Gemini 可不解释背景就进入同一认知起点 ✅
+- 下一步：系统设计阶段结束，切回客户验证执行
+
+2. 业务层状态（北美开发）
+- 阶段：Client Validation（客户验证）
+- 进展：约40个小B客户线索已收集，但尚未验证真实性
+- 卡点：第一封开发信尚未发出
+
+3. 最近关键 Decision
+- D-001：先研究 Camping 店产品结构（非 REI 大渠道）
+- D-002：放弃大渠道 REI，优先小 B 客户验证
+- D-003：用 GitHub Pages 替代 paste.rs / Notion 作为 SSOT
+- D-004：确认为双层系统（AI 协作系统 × 北美开发），平级并行
+- D-005：MCL Boot Loader v3 为全 AI 统一认知入口
+
+4. 当前卡点
+- 客户触达执行尚未启动（被系统设计讨论打断了两天）
+
+5. 下一步动作（仅执行级）
+- 验证 40 个客户真实性
+- 找到触达路径（Email / IG / 电话 / 表单）
+- 发出第一批开发信，获得市场反馈
