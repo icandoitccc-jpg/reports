@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShineTrip 五大表 — B2B 北美市场开发数据库</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    background: #f8f9fa;
+    color: #1a202c;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  .container { max-width: 100%; margin: 0 auto; }
+  h1 { font-size: 1.5em; color: #1a365d; margin-bottom: 4px; }
+  .sub { color: #718096; font-size: 0.85em; margin-bottom: 24px; }
+
+  /* TOC */
+  .toc {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-bottom: 24px;
+  }
+  .toc h2 { font-size: 1em; margin-bottom: 8px; color: #2d3748; }
+  .toc a { display: block; padding: 4px 0; color: #2b6cb0; text-decoration: none; font-size: 0.9em; }
+  .toc a:hover { text-decoration: underline; }
+
+  /* Section */
+  .section {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .section h2 {
+    font-size: 1.15em;
+    color: #1a365d;
+    margin-bottom: 4px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e2e8f0;
+  }
+  .section .meta { color: #718096; font-size: 0.8em; margin-bottom: 16px; }
+
+  /* Table wrapper for horizontal scroll */
+  .table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.82em;
+    min-width: 800px;
+    white-space: nowrap;
+  }
+  thead { position: sticky; top: 0; z-index: 1; }
+  th {
+    background: #edf2f7;
+    color: #2d3748;
+    font-weight: 600;
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 2px solid #cbd5e0;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+  td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #edf2f7;
+    vertical-align: top;
+  }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: #f7fafc; }
+
+  /* Links in tables */
+  td a { color: #2b6cb0; text-decoration: none; }
+  td a:hover { text-decoration: underline; }
+
+  /* Status markers */
+  .closed { color: #e53e3e; font-weight: 500; }
+  .warn { color: #d69e2e; }
+
+  .footer {
+    text-align: center;
+    color: #a0aec0;
+    font-size: 0.78em;
+    margin-top: 32px;
+    padding: 16px 0;
+  }
+
+  /* Print */
+  @media print {
+    body { background: #fff; padding: 0; }
+    .section { break-inside: avoid; border: none; padding: 10px 0; }
+    .table-wrap { border: none; }
+    table { font-size: 0.7em; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>ShineTrip 五大表</h1>
+  <p class="sub">B2B 北美户外装备市场开发数据库 · 上次更新：2026-07-01</p>
+
+  <div class="toc">
+    <h2>目录</h2>
+    <a href="#t01">01 标签字典 — 系统底层基准，统一分类口径和标签</a>
+    <a href="#t02">02 品牌数据库 — 竞品坐标系，行业标杆记录（37个品牌）</a>
+    <a href="#t03">03 客户数据库 — 目标买家池，零售商和买手线索（42条记录）</a>
+    <a href="#t04">04 渠道数据库 — 渠道分类规则和准入门槛（5大渠道）</a>
+    <a href="#t05">05 开发跟进数据库 — 销售全生命周期管理和情报沉淀（5条记录）</a>
+  </div>
+
+  <!-- ===== TABLE 01 ===== -->
+  <div class="section" id="t01">
+    <h2>01 标签字典</h2>
+    <p class="meta">系统底层基准 — 统一分类口径和标签 · 6行</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>开发方向</th>
+            <th>产品聚焦</th>
+            <th>品牌调性</th>
+            <th>策略行动</th>
+            <th>核心策略</th>
+            <th>核心销售渠道</th>
+            <th>终端业态</th>
+            <th>联系人职位</th>
+            <th>体量/规模评级</th>
+            <th>核心风格匹配度</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>精致露营</td>
+            <td>基础流通款 (走量)</td>
+            <td>实用至上</td>
+            <td>溢价对标</td>
+            <td>防守线/对标</td>
+            <td>大型连锁系统</td>
+            <td>独立零售店 (大众/杂货)</td>
+            <td>决策人/老板/Owner</td>
+            <td>极高</td>
+            <td>极致轻量/硬核性能</td>
+          </tr>
+          <tr>
+            <td>大众露营</td>
+            <td>功能标杆款 (技术)</td>
+            <td>审美/设计</td>
+            <td>成本参考</td>
+            <td>高标线/抄作业</td>
+            <td>专业买手店/集合店</td>
+            <td>大型连锁卖场</td>
+            <td>采购总监/Buyer</td>
+            <td>高</td>
+            <td>精致生活/氛围美学</td>
+          </tr>
+          <tr>
+            <td>大型连锁</td>
+            <td>审美/场景款 (溢价)</td>
+            <td>专业/功能</td>
+            <td>渠道挖掘</td>
+            <td>深度拓展/渠道</td>
+            <td>区域核心代理商</td>
+            <td>区域代理商</td>
+            <td>采购专员/Assistant</td>
+            <td>中</td>
+            <td>车宿越野/功能改造</td>
+          </tr>
+          <tr>
+            <td>车宿越野</td>
+            <td>垂直单品 (垄断)</td>
+            <td>大众/低价</td>
+            <td>长期追踪</td>
+            <td>长期追踪/储备</td>
+            <td>DTC电商为主</td>
+            <td>改装/越野中心</td>
+            <td>销售/客服</td>
+            <td>低</td>
+            <td>高性价比/大众通路</td>
+          </tr>
+          <tr>
+            <td>潜力/其他</td>
+            <td>&mdash;</td>
+            <td>&mdash;</td>
+            <td>&mdash;</td>
+            <td>&mdash;</td>
+            <td>混合渠道</td>
+            <td>电商大卖家</td>
+            <td>&mdash;</td>
+            <td>暂未评估</td>
+            <td>复古/传统/文化向</td>
+          </tr>
+          <tr>
+            <td>&mdash;</td>
+            <td>&mdash;</td>
+            <td>&mdash;</td>
+            <td>&mdash;</td>
+            <td>&mdash;</td>
+            <td>待定/不明确</td>
+            <td>独立买手店 (精品/潮流)</td>
+            <td>&mdash;</td>
+            <td>&mdash;</td>
+            <td>硬核混搭</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ===== TABLE 02 ===== -->
+  <div class="section" id="t02">
+    <h2>02 品牌数据库</h2>
+    <p class="meta">竞品坐标系 — 行业标杆记录 · 37个品牌</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>品牌名称</th>
+            <th>总部国家</th>
+            <th>开发方向</th>
+            <th>产品聚焦</th>
+            <th>核心渠道</th>
+            <th>官方网站</th>
+            <th>社媒账号</th>
+            <th>品牌调性</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Coleman</td><td>美国</td><td>大众露营</td><td>基础流通款 (走量)</td><td>大型连锁系统</td><td><a href="https://www.coleman.com">coleman.com</a></td><td>@colemanusa</td><td>实用至上</td></tr>
+          <tr><td>Kelty</td><td>美国</td><td>大众露营</td><td>基础流通款 (走量)</td><td>大型连锁系统</td><td><a href="https://www.kelty.com">kelty.com</a></td><td>@keltybuilt</td><td>实用至上</td></tr>
+          <tr><td>REI Co-op</td><td>美国</td><td>大型连锁</td><td>功能标杆款 (技术)</td><td>大型连锁系统</td><td><a href="https://www.rei.com">rei.com</a></td><td>@rei</td><td>专业/功能</td></tr>
+          <tr><td>YETI</td><td>美国</td><td>精致露营</td><td>审美/场景款 (溢价)</td><td>混合渠道</td><td><a href="https://www.yeti.com">yeti.com</a></td><td>@yeti</td><td>审美/设计</td></tr>
+          <tr><td>Snow Peak</td><td>日本</td><td>精致露营</td><td>审美/场景款 (溢价)</td><td>专业买手店/集合店</td><td><a href="https://www.snowpeak.com">snowpeak.com</a></td><td>@snowpeakusa</td><td>审美/设计</td></tr>
+          <tr><td>Helinox</td><td>韩国</td><td>精致露营</td><td>审美/场景款 (溢价)</td><td>&mdash;</td><td><a href="https://www.helinox.com">helinox.com</a></td><td>@helinox</td><td>审美/设计</td></tr>
+          <tr><td>Exped</td><td>瑞士</td><td>精致露营</td><td>功能标杆款 (技术)</td><td>大型连锁系统</td><td><a href="https://www.expedusa.com/">expedusa.com</a></td><td>@expedusa</td><td>专业/功能</td></tr>
+          <tr><td>BioLite</td><td>美国</td><td>精致露营</td><td>功能标杆款 (技术)</td><td>大型连锁系统</td><td><a href="https://www.bioliteenergy.com/">bioliteenergy.com</a></td><td>@biolite</td><td>专业/功能</td></tr>
+          <tr><td>NEMO Equipment</td><td>美国</td><td>精致露营</td><td>功能标杆款 (技术)</td><td>大型连锁系统</td><td><a href="https://www.nemoequipment.com/">nemoequipment.com</a></td><td>@nemoequipment</td><td>专业/功能</td></tr>
+          <tr><td>Dometic</td><td>瑞典</td><td>精致露营</td><td>功能标杆款 (技术)</td><td>专业买手店/集合店</td><td><a href="https://www.dometic.com/en-us">dometic.com</a></td><td>@dometic</td><td>专业/功能</td></tr>
+          <tr><td>RUX</td><td>加拿大</td><td>精致露营</td><td>功能标杆款 (技术)</td><td>专业买手店/集合店</td><td><a href="https://rux.life/">rux.life</a></td><td>@rux.life</td><td>专业/功能</td></tr>
+          <tr><td>Gossamer Gear</td><td>美国</td><td>精致露营</td><td>功能标杆款 (技术)</td><td>专业买手店/集合店</td><td><a href="https://www.gossamergear.com/">gossamergear.com</a></td><td>@gossamergear</td><td>专业/功能</td></tr>
+          <tr><td>Thule</td><td>瑞典</td><td>精致露营</td><td>功能标杆款 (技术)</td><td>大型连锁系统</td><td><a href="https://www.thule.com/en-us/">thule.com</a></td><td>@thule</td><td>专业/功能</td></tr>
+          <tr><td>Sea to Summit</td><td>澳大利亚</td><td>精致露营</td><td>功能标杆款 (技术)</td><td>大型连锁系统</td><td><a href="https://seatosummit.com/">seatosummit.com</a></td><td>@seatosummit</td><td>专业/功能</td></tr>
+          <tr><td>Crazy Creek</td><td>美国</td><td>大众露营</td><td>功能标杆款 (技术)</td><td>专业买手店/集合店</td><td><a href="https://crazycreek.com/">crazycreek.com</a></td><td>@crazycreek</td><td>专业/功能</td></tr>
+          <tr><td>Naturehike (挪客)</td><td>中国</td><td>大众露营</td><td>基础流通款 (走量)</td><td>DTC电商为主</td><td><a href="https://www.naturehike.com/">naturehike.com</a></td><td>@naturehike</td><td>实用至上</td></tr>
+          <tr><td>Fire-Maple (火枫)</td><td>中国</td><td>大众露营</td><td>功能标杆款 (技术)</td><td>混合渠道</td><td><a href="https://firemaplegear.com/">firemaplegear.com</a></td><td>@firemaple_gear</td><td>实用至上</td></tr>
+          <tr><td>3F UL Gear</td><td>中国</td><td>大众露营</td><td>功能标杆款 (技术)</td><td>DTC电商为主</td><td><a href="https://3fulgear.com/">3fulgear.com</a></td><td>@3FULGEAR</td><td>实用至上</td></tr>
+          <tr><td>Aegismax (安第斯)</td><td>中国</td><td>大众露营</td><td>基础流通款 (走量)</td><td>DTC电商为主</td><td><a href="https://www.aegismax.com/">aegismax.com</a></td><td>@aegismaxonline</td><td>实用至上</td></tr>
+          <tr><td>牧高笛 (Mobi Garden)</td><td>中国</td><td>精致露营</td><td>审美/场景款 (溢价)</td><td>混合渠道</td><td><a href="https://mobigarden.com/">mobigarden.com</a></td><td>@mobigarden_id</td><td>审美/设计</td></tr>
+          <tr><td>凯乐石 (KAILAS)</td><td>中国</td><td>精致露营</td><td>功能标杆款 (技术)</td><td>专业买手店/集合店</td><td><a href="https://kailasgear.com/">kailasgear.com</a></td><td>@kailasglobal</td><td>专业/功能</td></tr>
+          <tr><td>Coody</td><td>韩国</td><td>精致露营</td><td>功能标杆款 (技术)</td><td>DTC电商为主</td><td><a href="https://coody.us/">coody.us</a></td><td>@coody.us</td><td>专业/功能</td></tr>
+          <tr><td>SOTO</td><td>日本</td><td>精致露营</td><td>功能标杆款 (技术)</td><td>专业买手店/集合店</td><td><a href="https://sotooutdoors.com/">sotooutdoors.com</a></td><td>@sotooutdoors_usa</td><td>专业/功能</td></tr>
+          <tr><td>Claymore</td><td>韩国</td><td>精致露营</td><td>功能标杆款 (技术)</td><td>混合渠道</td><td><a href="https://claymoreoutdoor.com/">claymoreoutdoor.com</a></td><td>@claymore_global</td><td>专业/功能</td></tr>
+          <tr><td>Kovea</td><td>韩国</td><td>精致露营</td><td>基础流通款 (走量)</td><td>混合渠道</td><td><a href="https://www.kovea.com/">kovea.com</a></td><td>@koveagear</td><td>实用至上</td></tr>
+          <tr><td>GCI Outdoor</td><td>美国</td><td>大众露营</td><td>基础流通款 (走量)</td><td>大型连锁系统</td><td><a href="https://gcioutdoor.com/">gcioutdoor.com</a></td><td>@gcioutdoor</td><td>大众/低价</td></tr>
+          <tr><td>Camp Chef</td><td>美国</td><td>大众露营</td><td>功能标杆款 (技术)</td><td>大型连锁系统</td><td><a href="https://www.campchef.com/">campchef.com</a></td><td>@campchef</td><td>专业/功能</td></tr>
+          <tr><td>Stanley</td><td>美国</td><td>大众露营</td><td>基础流通款 (走量)</td><td>大型连锁系统</td><td><a href="https://www.stanley1913.com/">stanley1913.com</a></td><td>@stanley_brand</td><td>审美/设计</td></tr>
+          <tr><td>KingCamp</td><td>中国</td><td>大众露营</td><td>基础流通款 (走量)</td><td>DTC电商为主</td><td><a href="https://www.kingcamp.com/">kingcamp.com</a></td><td>@kingcampofficial</td><td>大众/低价</td></tr>
+          <tr><td>Montbell</td><td>日本</td><td>精致露营</td><td>功能标杆款 (技术)</td><td>专业买手店/集合店</td><td><a href="https://www.montbell.com/us/en">montbell.com</a></td><td>@montbellamerica</td><td>专业/功能</td></tr>
+          <tr><td>Logos</td><td>日本</td><td>大众露营</td><td>审美/场景款 (溢价)</td><td>DTC电商为主</td><td><a href="https://www.logos-co.com/">logos-co.com</a></td><td>@logos_corp</td><td>审美/设计</td></tr>
+          <tr><td>ALPS Mountaineering</td><td>美国</td><td>大众露营</td><td>基础流通款 (走量)</td><td>大型连锁系统</td><td><a href="https://alpsmountaineering.com/">alpsmountaineering.com</a></td><td>@alpsbrands</td><td>大众/低价</td></tr>
+          <tr><td>Eureka!</td><td>美国</td><td>大众露营</td><td>基础流通款 (走量)</td><td>大型连锁系统</td><td><a href="https://eurekacamping.johnsonoutdoors.com/us">eurekacamping.com</a></td><td>@eurekacamping</td><td>实用至上</td></tr>
+          <tr><td>GSI Outdoors</td><td>美国</td><td>大众露营</td><td>基础流通款 (走量)</td><td>大型连锁系统</td><td><a href="https://gsioutdoors.com/">gsioutdoors.com</a></td><td>@gsioutdoors</td><td>专业/功能</td></tr>
+          <tr><td>MSR</td><td>美国</td><td>精致露营</td><td>功能标杆款 (技术)</td><td>专业买手店/集合店</td><td><a href="https://cascadedesigns.com/pages/msr">MSR (Cascade Designs)</a></td><td>@msr_gear</td><td>专业/功能</td></tr>
+          <tr><td>Big Agnes</td><td>美国</td><td>精致露营</td><td>功能标杆款 (技术)</td><td>大型连锁系统</td><td><a href="https://www.bigagnes.com/">bigagnes.com</a></td><td>@bigagnes</td><td>专业/功能</td></tr>
+          <tr><td>Front Runner</td><td>南非（美国运营）</td><td>车宿越野</td><td>垂直单品 (垄断)</td><td>专业买手店/集合店</td><td><a href="https://www.frontrunneroutfitters.com">frontrunneroutfitters.com</a></td><td>@frontrunneroutfitters</td><td>专业/功能</td></tr>
+          <tr><td>Zempire</td><td>新西兰</td><td>大众露营</td><td>功能标杆款 (技术)</td><td>专业买手店/集合店</td><td><a href="https://zempirecamping.com/">zempirecamping.com</a></td><td>@zempirecamping</td><td>审美/设计</td></tr>
+          <tr><td>ROAM Adventure</td><td>美国</td><td>车宿越野</td><td>功能标杆款 (技术)</td><td>DTC电商为主</td><td><a href="https://www.roamadventureco.com/">roamadventureco.com</a></td><td>@roamadventureco</td><td>专业/功能</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ===== TABLE 03 ===== -->
+  <div class="section" id="t03">
+    <h2>03 客户数据库</h2>
+    <p class="meta">目标买家池 — 零售商和买手线索 · 42条记录（含已停业/关闭标记）</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>客户名称</th>
+            <th>终端业态</th>
+            <th>所在州</th>
+            <th>官方网站</th>
+            <th>联系人职位</th>
+            <th>电子邮箱</th>
+            <th>电话</th>
+            <th>社媒账号</th>
+            <th>体量评级</th>
+            <th>风格匹配</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Campsaver</td><td>电商大卖家</td><td>UT</td><td>campsaver.com</td><td>采购总监/Buyer</td><td>cs@campsaver.com</td><td>888-426-7728 (免费热线)</td><td>@campsaver</td><td>低</td><td>高性价比/大众通路</td></tr>
+          <tr><td>Main Line Overland (加州店)</td><td>改装/越野中心</td><td>CA</td><td>mainlineoverland.com</td><td>采购总监/Buyer</td><td>sales@mainlineoverland.com</td><td>888-443-9061 (免费热线)</td><td>@mainlineoverland</td><td>极高</td><td>车宿越野/功能改造</td></tr>
+          <tr><td>Sportsman's Warehouse</td><td>独立零售店 (大众/杂货)</td><td>UT</td><td>sportsmans.com</td><td>采购专员/Assistant</td><td>customerservice@sportsmans.com</td><td>800-286-3076 (免费热线)</td><td>@sportsmans_warehouse</td><td>高</td><td>高性价比/大众通路</td></tr>
+          <tr><td>JAX Outdoor Gear</td><td>独立零售店 (大众/杂货)</td><td>CO</td><td>jaxgoods.com</td><td>销售/客服</td><td>info@jaxgoods.com</td><td>720-266-6160</td><td>@jaxgoods</td><td>极高</td><td>硬核混搭</td></tr>
+          <tr><td>Neptune Mountaineering</td><td>独立买手店 (精品/潮流)</td><td>CO</td><td>neptunemountaineering.com</td><td>采购总监/Buyer</td><td>info@neptunemountaineering.com</td><td>303-499-8866</td><td>@neptunemountaineering</td><td>极高</td><td>精致生活/氛围美学</td></tr>
+          <tr><td>Mountain Hardware &amp; Sports</td><td>独立零售店 (大众/杂货)</td><td>CA</td><td>mountainhardwareandsports.com</td><td>采购总监/Buyer</td><td>未公开（仅官网表单）</td><td>530-587-4844 / 530-563-2950</td><td>&mdash;</td><td>中</td><td>高性价比/大众通路</td></tr>
+          <tr><td>Elevation Sierra Adventure Essentials</td><td>独立零售店 (大众/杂货)</td><td>CA</td><td>sierraelevation.com</td><td>决策人/老板/Owner</td><td>info@sierraelevation.com</td><td>760-876-4560</td><td>FB: 268189516350</td><td>低</td><td>极致轻量/硬核性能</td></tr>
+          <tr><td>Wonderland Gear Exchange</td><td>独立零售店 (大众/杂货)</td><td>WA</td><td>wonderlandgearexchange.com</td><td>销售/客服</td><td>未找到（Contact页404）</td><td>206-582-1987</td><td>&mdash;</td><td>低</td><td>高性价比/大众通路</td></tr>
+          <tr><td>Foster Outdoor</td><td>独立零售店 (大众/杂货)</td><td>OR</td><td>fosteroutdoor.com</td><td>销售/客服</td><td>未公开（仅官网表单）</td><td>未找到</td><td>&mdash;</td><td>中</td><td>高性价比/大众通路</td></tr>
+          <tr><td>Mountain Shop</td><td>独立零售店 (大众/杂货)</td><td>OR</td><td>mountainshop.net</td><td>采购总监/Buyer</td><td>未公开（仅表单和Google Form）</td><td>(503) 288-6768</td><td>@mtshoppdx</td><td>中</td><td>极致轻量/硬核性能</td></tr>
+          <tr><td>Ascent Outdoors</td><td>独立零售店 (大众/杂货)</td><td>WA</td><td>ascentoutdoors.com</td><td>采购专员/Assistant</td><td>customerservice@ascentoutdoors.com</td><td>206-545-8810</td><td>&mdash;</td><td>中</td><td>精致生活/氛围美学</td></tr>
+          <tr><td>Feral Mountain Co.</td><td>独立零售店 (大众/杂货)</td><td>CO</td><td>liveferal.com</td><td>决策人/老板/Owner</td><td>未公开（仅在线表单）</td><td>(303) 903-8584 / (616) 326-0091</td><td>@liveferal (推测)</td><td>中</td><td>高性价比/大众通路</td></tr>
+          <tr><td>Happy Hiker</td><td>独立零售店 (大众/杂货)</td><td>NM</td><td>happyhiker.com</td><td>决策人/老板/Owner</td><td>未公开</td><td>(575) 914-6644</td><td>&mdash;</td><td>低</td><td>精致生活/氛围美学</td></tr>
+          <tr><td>Slim Pickins Outfitters</td><td>独立零售店 (大众/杂货)</td><td>TX</td><td>slimpickinsoutfitters.com</td><td>决策人/老板/Owner</td><td>未公开（仅在线表单）</td><td>未找到</td><td>@spoutfitter</td><td>低</td><td>精致生活/氛围美学</td></tr>
+          <tr><td><span class="closed">Summit Hut [已关闭, 2025.09]</span></td><td>独立零售店 (大众/杂货)</td><td>AZ</td><td>summithut.com</td><td>N/A（已停业）</td><td>N/A（已停业）</td><td>N/A（已停业）</td><td>N/A</td><td>中</td><td>车宿越野/功能改造</td></tr>
+          <tr><td><span class="closed">Adventure 16 [已关闭, 2019]</span></td><td>独立零售店 (大众/杂货)</td><td>CA</td><td>adventure16.com</td><td>N/A（已停业）</td><td>N/A（已停业）</td><td>N/A（已停业）</td><td>N/A</td><td>中</td><td>极致轻量/硬核性能</td></tr>
+          <tr><td>Taos Mountain Outfitters</td><td>独立零售店 (大众/杂货)</td><td>NM</td><td>taosmountainoutfitters.com</td><td>销售/客服</td><td>未公开（仅在线表单）</td><td>未找到</td><td>FB: TaosMountainOutfitters</td><td>低</td><td>高性价比/大众通路</td></tr>
+          <tr><td>Roam'n Around</td><td>独立零售店 (大众/杂货)</td><td>SD</td><td>roamnaround.com</td><td>销售/客服</td><td>INFO@ROAMNAROUND.COM</td><td>605-716-1660</td><td>&mdash;</td><td>低</td><td>高性价比/大众通路</td></tr>
+          <tr><td>The Benchmark</td><td>独立零售店 (大众/杂货)</td><td>OH</td><td>benchmarkoutfitter.com</td><td>销售/客服</td><td>未找到（Contact页404）</td><td>未找到</td><td>&mdash;</td><td>中</td><td>高性价比/大众通路</td></tr>
+          <tr><td>Janky Gear</td><td>独立零售店 (大众/杂货)</td><td>MN</td><td>jankygearmn.com</td><td>销售/客服</td><td>未找到（Contact页404）</td><td>未找到</td><td>@jankygear</td><td>低</td><td>高性价比/大众通路</td></tr>
+          <tr><td>Alpine Shop</td><td>独立零售店 (大众/杂货)</td><td>MO</td><td>alpineshop.com</td><td>销售/客服</td><td>未找到（无法访问）</td><td>未找到</td><td>&mdash;</td><td>中</td><td>高性价比/大众通路</td></tr>
+          <tr><td>Pack Rat Outdoor Center</td><td>独立零售店 (大众/杂货)</td><td>AR</td><td>packratoc.com</td><td>采购总监/Buyer</td><td>未公开（仅在线表单）</td><td>(479) 521-6340</td><td>@packratoc</td><td>低</td><td>精致生活/氛围美学</td></tr>
+          <tr><td><span class="closed">Midwest Mountaineering [已关闭, 2023]</span></td><td>独立零售店 (大众/杂货)</td><td>MN</td><td>midwestmtn.com</td><td>N/A（已停业）</td><td>N/A（已停业）</td><td>N/A（已停业）</td><td>N/A</td><td>中</td><td>极致轻量/硬核性能</td></tr>
+          <tr><td>Great Outdoor Provisions Co.</td><td>独立零售店 (大众/杂货)</td><td>NC</td><td>greatoutdoorprovision.com</td><td>销售/客服</td><td>未找到（Contact页404）</td><td>未找到</td><td>@greatoutdoorprovision (推测)</td><td>中</td><td>高性价比/大众通路</td></tr>
+          <tr><td>Trailful Outdoor Co.</td><td>独立零售店 (大众/杂货)</td><td>GA</td><td>trailful.com</td><td>销售/客服</td><td>hello@trailful.com</td><td>(706) 521-4453</td><td>&mdash;</td><td>低</td><td>精致生活/氛围美学</td></tr>
+          <tr><td>J&amp;H Outdoors</td><td>独立零售店 (大众/杂货)</td><td>KY</td><td>jhoutdoors.com</td><td>销售/客服</td><td>info@jhoutdoors.com</td><td>(859) 278-0730</td><td>&mdash;</td><td>低</td><td>精致生活/氛围美学</td></tr>
+          <tr><td>Half Moon Outfitters</td><td>独立零售店 (大众/杂货)</td><td>SC</td><td>halfmoonoutfitters.com</td><td>销售/客服</td><td>customerservice@halfmoonoutfitters.com</td><td>(877) 846-7589 (免费热线)</td><td>@halfmoonoutfitters</td><td>中</td><td>精致生活/氛围美学</td></tr>
+          <tr><td>Outdoor Gear Exchange</td><td>独立零售店 (大众/杂货)</td><td>VT</td><td>gearx.com</td><td>销售/客服</td><td>未公开（仅在线表单）</td><td>未找到</td><td>&mdash;</td><td>中</td><td>精致生活/氛围美学</td></tr>
+          <tr><td>Rock and Snow</td><td>独立零售店 (大众/杂货)</td><td>NY</td><td>rockandsnow.com</td><td>销售/客服</td><td>未找到（Contact页404）</td><td>未找到</td><td>&mdash;</td><td>低</td><td>极致轻量/硬核性能</td></tr>
+          <tr><td>The Trail Head</td><td>独立零售店 (大众/杂货)</td><td>MT</td><td>trailheadmontana.net</td><td>销售/客服</td><td>info@trailheadmontana.net</td><td>406-543-6966</td><td>&mdash;</td><td>低</td><td>极致轻量/硬核性能</td></tr>
+          <tr><td><span class="closed">Backwoods [已永久关闭]</span></td><td>独立零售店 (大众/杂货)</td><td>TX</td><td>backwoods.com</td><td>N/A（已停业）</td><td>N/A（已停业）</td><td>N/A（已停业）</td><td>N/A</td><td>中</td><td>高性价比/大众通路</td></tr>
+          <tr><td>Sportago</td><td>独立零售店 (大众/杂货)</td><td>CA</td><td>sportago.com</td><td>采购总监/Buyer</td><td>info@sportago.com</td><td>(707) 963-9042</td><td>@sportago_napa</td><td>低</td><td>精致生活/氛围美学</td></tr>
+          <tr><td>Proof Lab Outdoor Center</td><td>独立零售店 (大众/杂货)</td><td>CA</td><td>prooflab.com</td><td>采购专员/Assistant</td><td>hello@prooflab.com</td><td>415-380-8900</td><td>@prooflab</td><td>中</td><td>精致生活/氛围美学</td></tr>
+          <tr><td>Stoked</td><td>独立零售店 (大众/杂货)</td><td>IA</td><td>stokeddsm.com</td><td>决策人/老板/Owner</td><td>stokeddsm@gmail.com</td><td>(515) 415-1057</td><td>@stokeddsm</td><td>低</td><td>高性价比/大众通路</td></tr>
+          <tr><td>URE Outfitters</td><td>独立零售店 (大众/杂货)</td><td>RI</td><td>ureoutfitters.com</td><td>采购总监/Buyer</td><td>ureoutfitters@hotmail.com</td><td>401-539-4050</td><td>@ureoutfitters</td><td>中</td><td>高性价比/大众通路</td></tr>
+          <tr><td>Mountain Outfitters</td><td>独立零售店 (大众/杂货)</td><td>TN</td><td>themountainoutfitters.com</td><td>采购总监/Buyer</td><td>outfittingcustomerservice@gmail.com</td><td>(931) 924-4100</td><td>@themountainoutfitters</td><td>中</td><td>高性价比/大众通路</td></tr>
+          <tr><td>River Rock Outfitter</td><td>独立零售店 (大众/杂货)</td><td>VA</td><td>riverrockoutfitter.com</td><td>采购总监/Buyer</td><td>INFO@RIVERROCKOUTFITTER.COM</td><td>(540) 372-8708</td><td>@riverrockoutfitter</td><td>中</td><td>高性价比/大众通路</td></tr>
+          <tr><td>Walkabout Outfitter</td><td>独立零售店 (大众/杂货)</td><td>VA</td><td>walkaboutoutfitter.com</td><td>采购总监/Buyer</td><td>info@walkaboutoutfitter.com</td><td>(540) 739-3263</td><td>@walkabout_outfitter</td><td>高</td><td>高性价比/大众通路</td></tr>
+          <tr><td>Black Dome Mountain Sports</td><td>独立零售店 (大众/杂货)</td><td>NC</td><td>blackdome.com</td><td>采购总监/Buyer</td><td>info@blackdome.com</td><td>(828) 251-2001</td><td>@blackdomemountainsports</td><td>中</td><td>极致轻量/硬核性能</td></tr>
+          <tr><td>Camping World</td><td>大型连锁上市公司 (NYSE:CWH)</td><td>IL (HQ, 44州196店)</td><td>campingworld.com</td><td>采购总监/Buyer (Vendor Summit流程)</td><td>vendorfair@campingworld.com (推测); cs@campingworld.com (客服)</td><td>(847) 808-3000 (总部总机)</td><td>@campingworld (IG 379.8K)</td><td>极高 (NYSE:CWH, $6.37B营收)</td><td>大众露营 (RV露营场景)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ===== TABLE 04 ===== -->
+  <div class="section" id="t04">
+    <h2>04 渠道数据库</h2>
+    <p class="meta">渠道分类规则和准入门槛 · 5大渠道</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>渠道编码</th>
+            <th>渠道名称</th>
+            <th>风格标签</th>
+            <th>渠道类型</th>
+            <th>覆盖区域</th>
+            <th>核心特点</th>
+            <th>进入门槛/资质要求</th>
+            <th>适合我司产品</th>
+            <th>渠道备注</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>CH-01</strong></td>
+            <td>独立专业/越野改装专门店</td>
+            <td>车宿越野/功能改造</td>
+            <td>线下垂直独立专门店</td>
+            <td>全美越野与露营大州</td>
+            <td>决策速度极快，主理人即采购；极度看重产品硬核品质和店面实车陈列效果</td>
+            <td>不设硬性门槛。支持小额散货拼箱，可通过国内货代直接双清送达门店</td>
+            <td>车载收纳硬壳箱、重载营地折叠桌椅、车边天幕周边家具</td>
+            <td><strong>最核心的主攻渠道。</strong>业务员谈妥后用国内合作货代帮客户安排拼箱/快递送门</td>
+          </tr>
+          <tr>
+            <td><strong>CH-02</strong></td>
+            <td>区域精品户外零售商</td>
+            <td>精致生活/氛围美学</td>
+            <td>线下垂直独立精品单店或区域零售网络</td>
+            <td>美西/美东特定区域</td>
+            <td>本地化粘性极高，客群为中产、审美敏感的精致露营与家庭户外爱好者</td>
+            <td>首批看重样品质量、实物视觉、电子Catalog规范性。支持国内货代直发店门</td>
+            <td>高颜值折叠桌椅、轻量化铝合金厨房模块、高档便携随身家具</td>
+            <td>成交前客户可能询问商业保险问题，届时可根据订单意向申请保单配合</td>
+          </tr>
+          <tr>
+            <td><strong>CH-03</strong></td>
+            <td>大型综合户外连锁巨头</td>
+            <td>高性价比/大众通路</td>
+            <td>线下跨国/全美超级大流通连锁</td>
+            <td>全美所有主要城市</td>
+            <td>吞吐体量极大，"一国吃饱"战略级渠道；品牌准入门槛高，流程死板，不接受散货拼箱</td>
+            <td>门槛极高。只接受大宗整柜(FCL)，对UPC条码、防爆包装、海外清关、千万级商业保险要求极严</td>
+            <td>全线量产版畅销款折叠椅、大众价格带营地桌椅、冷箱搭配家具</td>
+            <td><strong>战略孵化渠道。</strong>中长期核心攻坚目标，现阶段先收集买手名单建立轻度联系</td>
+          </tr>
+          <tr>
+            <td><strong>CH-04</strong></td>
+            <td>垂类露营/独立站电商巨头</td>
+            <td>硬核混搭 / 极致轻量</td>
+            <td>线上垂直零售与大仓分销平台</td>
+            <td>全美/加拿大</td>
+            <td>流量高度精准，无货架实体陈列限制。通常有自己的囤货大仓，偏好社媒联合营销引流</td>
+            <td>优先推荐国内货代散货直发（低起订量、双清送门）批量切入</td>
+            <td>差异化明显的独家模块化收纳工具包、核心高颜值折叠桌椅、全系爆款</td>
+            <td><strong>弹性合作政策。</strong>利益足够即可单案单议，包括海外仓一件代发等本地履约</td>
+          </tr>
+          <tr>
+            <td><strong>CH-05</strong></td>
+            <td>户外露营展会与车友俱乐部</td>
+            <td>车宿越野/功能改造 / 复古/文化向</td>
+            <td>线下体验与活动营销渠道</td>
+            <td>全美巡回（Overland Expo等）</td>
+            <td>现场转化率极高，圈子文化黏性强，品牌信任度建设的绝佳阵地</td>
+            <td>需提前数月预订展位，或与当地俱乐部KOL达成赞助协议</td>
+            <td>全系主打展示产品、限量版战术周边赠品</td>
+            <td>每年重头戏。开展前3个月梳理参展零售商名单进行定向打击</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ===== TABLE 05 ===== -->
+  <div class="section" id="t05">
+    <h2>05 开发跟进数据库</h2>
+    <p class="meta">销售全生命周期管理和情报沉淀 · 5条活跃记录</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>客户名称</th>
+            <th>首次联系时间</th>
+            <th>联系人</th>
+            <th>跟进业务员</th>
+            <th>沟通渠道</th>
+            <th>当前跟进阶段</th>
+            <th>客户反馈摘要</th>
+            <th>是否报价</th>
+            <th>是否寄样</th>
+            <th>下一次跟进时间</th>
+            <th>备注</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Neptune Mountaineering</td>
+            <td>2026-06-10</td>
+            <td>Craig Shibley</td>
+            <td>业务1</td>
+            <td>社媒私信 (IG DM)</td>
+            <td>已建立联系/意向沟通</td>
+            <td>IG已回并要走Catalog，等待买手Craig邮件</td>
+            <td>否</td>
+            <td>否</td>
+            <td>2026-06-18</td>
+            <td>店主页陈列大量Snow Peak的IGT模块化桌子</td>
+          </tr>
+          <tr>
+            <td>Campsaver</td>
+            <td>2026-06-11</td>
+            <td>Sarah Jenkins</td>
+            <td>业务1</td>
+            <td>全能邮箱 (Email)</td>
+            <td>已报价</td>
+            <td>Sarah对折叠椅有兴趣，要求低MOQ+拼箱双清</td>
+            <td>是</td>
+            <td>否</td>
+            <td>2026-06-17</td>
+            <td>对方线上主营Helinox轻量化系列，想找平替</td>
+          </tr>
+          <tr>
+            <td>Jax Outdoor Gear</td>
+            <td>2026-06-12</td>
+            <td>Mark Miller</td>
+            <td>业务2</td>
+            <td>全能邮箱 (Email)</td>
+            <td>样品寄送中</td>
+            <td>Mark要看收纳箱样品，已发货代散货并给单号</td>
+            <td>是</td>
+            <td>是</td>
+            <td>2026-06-25</td>
+            <td>对方拟减少Kelty平价线，腾出空间进战术风</td>
+          </tr>
+          <tr>
+            <td>Blue Ridge Mountain Sports</td>
+            <td>2026-06-13</td>
+            <td>Tom Davis</td>
+            <td>业务3</td>
+            <td>电话/面对面</td>
+            <td>不匹配/归档</td>
+            <td>店长称今年采购预算已做完，明年春季再看</td>
+            <td>否</td>
+            <td>否</td>
+            <td>2027-01-15</td>
+            <td>店内卖Coleman低端平价线，调性与我司不搭</td>
+          </tr>
+          <tr>
+            <td><strong>Austin Canoe &amp; Kayak</strong></td>
+            <td>2026-06-14</td>
+            <td>Kevin Lacey</td>
+            <td>业务4</td>
+            <td>即时通讯 (App/Chat)</td>
+            <td><strong>✅ 正式合作</strong></td>
+            <td>三轮谈判后接受散货直发政策，5000美金定金已到</td>
+            <td>是</td>
+            <td>是</td>
+            <td>2026-06-20</td>
+            <td>越野车宿改装店，拿了战术桌。店内主营YETI</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <p class="footer">ShineTrip B2B 北美市场开发数据库 · 由 WorkBuddy 维护 · Last updated: 2026-07-01</p>
+</div>
+</body>
+</html>
